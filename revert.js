@@ -1,11 +1,16 @@
 const revert = (str) => {
-    let word = str.split('')
-    let reverted = "";
+    if (typeof str === "string") {
+        let word = str.split('')
+        let reverted = "";
 
-    for (let i = word.length - 1; i >= 0; i--) {
-        reverted += word[i];
+        for (let i = word.length - 1; i >= 0; i--) {
+            reverted += word[i];
+        }
+        return reverted;
+    } else {
+        return "Votre paramètre doit être une chaîne de caractère et rien d'autre!"
     }
-    return reverted;
+
 }
 
 module.exports = revert
