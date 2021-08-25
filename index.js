@@ -1,3 +1,3 @@
 
 const revert = require('./revert')
-console.log(revert("Bonjour !"))
+console.log(revert("^ptecsfDFDERZ34^cds"))
