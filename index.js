@@ -1,1 +1,3 @@
-console.log("hello")
+
+const revert = require('./revert')
+console.log(revert("hello"))
